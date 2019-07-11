@@ -2,8 +2,13 @@ package com.stackroute.domain;
 
 public class Movie {
 
-    //Actor Class Initialisation
-    private Actor actor;
+    Actor actor;
+
+    public Movie(){}
+
+
+    public void setActor(Actor actor) { this.actor = actor; }
+
 
     public Movie(Actor actor) {
         this.actor = actor;
@@ -16,7 +21,6 @@ public class Movie {
         System.out.println("In the movie");
         actor.display();
     }
-
 
 
 }
