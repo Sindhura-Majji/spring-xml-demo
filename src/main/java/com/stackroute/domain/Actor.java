@@ -7,18 +7,13 @@ public class Actor {
     private String gender;
     private int age;
 
-    //Setter methods for name,gender,age
-    public void setName(String name) {
+    //Constructor for the name, gender, age
+    public Actor(String name, String gender, int age) {
         this.name = name;
-    }
-
-    public void setGender(String gender) {
         this.gender = gender;
-    }
-
-    public void setAge(int age) {
         this.age = age;
     }
+
 
     //Display method which display injected values
     public void display()
