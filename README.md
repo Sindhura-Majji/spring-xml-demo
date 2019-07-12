@@ -31,11 +31,13 @@ For the Movie bean, use constructor based object injection in the bean definitio
 (beans.xml) to inject an Actor bean.
 In the Main class, look up Movie bean using ApplicationContext and print out Author
 information.
+
 Use the same ApplicationContext to again look up the same Movie bean.
 Print out the equality result of the two Movie beans.
 System.out.println(beanA==beanB);
 Change the scope of the Movie bean in beans.xml to prototype and run the application again.
 Note the output.
+
 Replace id of the Movie bean with name having two values, like this:
 <bean name=”MovieA, MovieB” ........>
 Update the code in Main to get the Movie bean by its two different name.
@@ -65,11 +67,13 @@ Push the code to aware-interface branch.
 Task 5:
 From the aware-interface branch of spring-xml-demo repo create a bean-lifecycle
 branch.
+
 Add a BeanLifecycleDemoBean class in com.stackroute.demo that implements
 InitializingBean and DisposableBean.
 Override the required methods to print out messages.
 Define BeanLifecycleDemoBean as a bean in beans.xml.
 Run the application and observe the result.
+
 Add two methods customInit() and customDestroy() to the BeanLifecycleDemoBean
 class and print out custom messages.
 In the BeanLifecycleDemoBean bean definition, in beans.xml, set the customInit()
