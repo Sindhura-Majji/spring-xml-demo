@@ -25,9 +25,9 @@
         <constructor-arg name="age" value="6"/>
     </bean>
 
-    <bean name="movie" class="com.stackroute.domain.Movie" scope="prototype"  autowire="byName"> </bean>
+    <bean name="movie" class="com.stackroute.domain.Movie"   autowire="byName"> </bean>
 
-   <bean name="movie1" class="com.stackroute.domain.Movie" scope="prototype"  autowire="constructor"> </bean>
+  <!-- <bean name="movie1" class="com.stackroute.domain.Movie" scope="prototype"  autowire="constructor"> </bean>  -->
 
 
 </beans>
