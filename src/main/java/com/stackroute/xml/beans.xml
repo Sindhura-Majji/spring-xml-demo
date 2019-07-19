@@ -6,19 +6,21 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-
+<!-- Bean for Actor class and Construction injection -->
     <bean id="actor" class="com.stackroute.domain.Actor">
         <constructor-arg name="name" index="0" type="java.lang.String" value="Sindhu" />
         <constructor-arg name="gender" value="female"/>
         <constructor-arg name="age" value="23"/>
     </bean>
 
+ <!-- Bean for Actor class and Construction injection -->
     <bean id="actor2" class="com.stackroute.domain.Actor">
         <constructor-arg name="name"  index="0" type="java.lang.String" value="Minnu"/>
         <constructor-arg name="gender" value="Male"/>
         <constructor-arg name="age" value="26"/>
     </bean>
 
+<!-- Bean for Actor class and Construction injection -->
     <bean id="actor3" class="com.stackroute.domain.Actor">
         <constructor-arg name="name" index="0" type="java.lang.String" value="Sarah" />
         <constructor-arg name="gender" value="female"/>
@@ -26,8 +28,6 @@
     </bean>
 
     <bean name="movie" class="com.stackroute.domain.Movie"   autowire="byName"> </bean>
-
-  <!-- <bean name="movie1" class="com.stackroute.domain.Movie" scope="prototype"  autowire="constructor"> </bean>  -->
 
 
 </beans>
