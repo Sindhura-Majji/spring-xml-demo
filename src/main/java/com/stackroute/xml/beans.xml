@@ -6,25 +6,28 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-
+<!-- Constructor based injection -->
     <bean id="actor1" class="com.stackroute.domain.Actor">
     <constructor-arg name="name" index="0" type="java.lang.String" value="Sindhu" />
         <constructor-arg name="gender" value="female"/>
         <constructor-arg name="age" value="23"/>
     </bean>
 
+ <!-- Constructor based injection -->
     <bean id="actor2" class="com.stackroute.domain.Actor">
         <constructor-arg name="name"  index="0" type="java.lang.String" value="Minnu"/>
         <constructor-arg name="gender" value="Male"/>
         <constructor-arg name="age" value="26"/>
     </bean>
 
+<!-- Constructor based injection -->
     <bean id="actor3" class="com.stackroute.domain.Actor">
         <constructor-arg name="name" index="0" type="java.lang.String" value="Sarah" />
         <constructor-arg name="gender" value="female"/>
         <constructor-arg name="age" value="6"/>
     </bean>
 
+  <!-- Constructor based injection of actor objects -->
     <bean name="movie1,movie4" class="com.stackroute.domain.Movie" scope="prototype">
     <constructor-arg name="actor" ref="actor1"/>
     </bean>
