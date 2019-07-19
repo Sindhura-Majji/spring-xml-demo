@@ -7,6 +7,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.beans.factory.BeanNameAware;
 
+//Implementing ApplicationContextAware, BeanNameAware, BeanFactoryAware
 public class Movie implements ApplicationContextAware, BeanNameAware, BeanFactoryAware{
 
     Actor actor;
@@ -18,7 +19,7 @@ public class Movie implements ApplicationContextAware, BeanNameAware, BeanFactor
 
     public void setActor(Actor actor) { this.actor = actor; }
 
-
+//Movie Constructor 
     public Movie(Actor actor) {
         this.actor = actor;
     }
