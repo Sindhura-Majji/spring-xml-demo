@@ -7,9 +7,10 @@ public class Movie {
     public Movie(){}
 
 
+    //Setter for Actor class
     public void setActor(Actor actor) { this.actor = actor; }
 
-
+    //Movie constructor
     public Movie(Actor actor) {
         this.actor = actor;
     }
