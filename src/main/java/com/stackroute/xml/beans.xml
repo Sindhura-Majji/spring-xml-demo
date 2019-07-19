@@ -6,27 +6,31 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-
+<!-- creating actor with id actor bean and implementing constructor injection -->
     <bean id="actor" class="com.stackroute.domain.Actor">
         <constructor-arg name="name" index="0" type="java.lang.String" value="Sindhu" />
         <constructor-arg name="gender" value="female"/>
         <constructor-arg name="age" value="23"/>
     </bean>
-
+       
+<!-- creating actor with id actor2 bean and implementing constructor injection -->
     <bean id="actor2" class="com.stackroute.domain.Actor">
         <constructor-arg name="name"  index="0" type="java.lang.String" value="Minnu"/>
         <constructor-arg name="gender" value="Male"/>
         <constructor-arg name="age" value="26"/>
     </bean>
-
+       
+<!-- creating actor with id actor bean and implementing constructor injection -->
     <bean id="actor3" class="com.stackroute.domain.Actor">
         <constructor-arg name="name" index="0" type="java.lang.String" value="Sarah" />
         <constructor-arg name="gender" value="female"/>
         <constructor-arg name="age" value="6"/>
     </bean>
 
-    <bean name="movie" class="com.stackroute.domain.Movie" scope="prototype"  autowire="byName"> </bean>
-
+<!-- Implementing autowire byName -->
+   <bean name="movie" class="com.stackroute.domain.Movie" scope="prototype"  autowire="byName"> </bean>
+       
+<!-- Implementing autowire constructor -->
    <bean name="movie1" class="com.stackroute.domain.Movie" scope="prototype"  autowire="constructor"> </bean>
 
 
