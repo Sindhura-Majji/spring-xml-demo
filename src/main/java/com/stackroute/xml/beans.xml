@@ -3,32 +3,12 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-        http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-
-
-  <!--  <bean id="actor" class="com.stackroute.domain.Actor">
-        <constructor-arg name="name" index="0" type="java.lang.String" value="Sindhu" />
-        <constructor-arg name="gender" value="female"/>
-        <constructor-arg name="age" value="23"/>
-    </bean>
-
-    <bean id="actor2" class="com.stackroute.domain.Actor">
-        <constructor-arg name="name"  index="0" type="java.lang.String" value="Minnu"/>
-        <constructor-arg name="gender" value="Male"/>
-        <constructor-arg name="age" value="26"/>
-    </bean>
-
-    <bean id="actor3" class="com.stackroute.domain.Actor">
-        <constructor-arg name="name" index="0" type="java.lang.String" value="Sarah" />
-        <constructor-arg name="gender" value="female"/>
-        <constructor-arg name="age" value="6"/>
-    </bean>
-
-    <bean name="movie" class="com.stackroute.domain.Movie"   autowire="byName"> </bean> -->
-
+        http://www.springframework.org/schema/beans/spring-beans.xsd">\
+       
+ <!-- Bean for BeanPostProcessor -->
     <bean id="processor" class="com.stackroute.demo.BeanPostProcessorDemoBean" > </bean>
-
+       
+<!-- Bean for BeanLifeCycleDemo -->
     <bean id="beanlifecycledemobean" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy"> </bean>
 
 </beans>
