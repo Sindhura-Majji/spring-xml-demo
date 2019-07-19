@@ -20,7 +20,7 @@ public class Main {
         ApplicationContext context= new ClassPathXmlApplicationContext("beans.xml");
         System.out.println("display using ApplicationContext");
 
-
+//Calling movie method through movie beans
         Movie movie1 = context.getBean("movie1", Movie.class);
         movie1.movie();
 
@@ -34,33 +34,6 @@ public class Main {
         movie3.movie();
 
         System.out.println(movie2==movie3);
-
-
-
-
-
-
-
-        /*
-        // Using XmlBeanFactory
-        XmlBeanFactory xmlBeanFactoryfactory = new XmlBeanFactory(new ClassPathResource("beans.xml"));
-        System.out.println("\ndisplay using XmlBeanFactory");
-        Actor sindhura = xmlBeanFactoryfactory.getBean("actor1",Actor.class);
-        sindhura.display();
-        Movie movie1 = context.getBean("movie", Movie.class);
-        movie1.movie();
-
-        //Using BeanDefinitionRegistry and BeanDefinitionReader
-        DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
-        BeanDefinitionRegistry register = new GenericApplicationContext(factory);
-        BeanDefinitionReader reader = new XmlBeanDefinitionReader(register);
-        reader.loadBeanDefinitions("beans.xml");
-        System.out.println("\nusing BeanDefinitionRegister and BeanDefinitionReader");
-        Actor actor = factory.getBean("actor1", Actor.class);
-        actor.display();
-        Movie movie2 = factory.getBean("movie",Movie.class);
-        movie2.movie();
-*/
 
 
     }
