@@ -7,14 +7,17 @@ public class Actor {
     private String gender;
     private int age;
 
+    //Setter method for name
     public void setName(String name) {
         this.name = name;
     }
 
+    //Setter method for gender
     public void setGender(String gender) {
         this.gender = gender;
     }
 
+    //setter method for age
     public void setAge(int age) {
         this.age = age;
     }
