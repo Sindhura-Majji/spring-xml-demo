@@ -6,13 +6,13 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-
+   <!-- Bean for actor and property based injection -->
     <bean id="actor" class="com.stackroute.domain.Actor">
     <property name="name" value="Sindhu"/>
         <property name="gender" value="female"/>
         <property name="age" value="25"/>
     </bean>
-
+<!-- Ben for movie -->
     <bean id="movie" class="com.stackroute.domain.Movie">
     <property name="actor" ref="actor"/>
     </bean>
